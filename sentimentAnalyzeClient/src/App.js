@@ -15,7 +15,9 @@ class App extends React.Component {
           sentimentOutput:[],
           sentiment:true
         }
-  
+  componentDidMount(){
+    document.title = "Sentiment Analyzer"
+  }
   /*
   This method returns the component based on what the input mode is.
   If the requested input mode is "text" it returns a textbox with 4 rows.
